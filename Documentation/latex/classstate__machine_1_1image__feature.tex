@@ -1,0 +1,49 @@
+\hypertarget{classstate__machine_1_1image__feature}{}\doxysection{state\+\_\+machine.\+image\+\_\+feature Class Reference}
+\label{classstate__machine_1_1image__feature}\index{state\_machine.image\_feature@{state\_machine.image\_feature}}
+
+
+Istance called in play state to track the ball.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classstate__machine_1_1image__feature_a719ee46dbe292cfe76d9b20b3d752b9e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em initialization \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstate__machine_1_1image__feature_a18e75f60a2a7f566add766b5f892c6f5}\label{classstate__machine_1_1image__feature_a18e75f60a2a7f566add766b5f892c6f5}} 
+def \mbox{\hyperlink{classstate__machine_1_1image__feature_a18e75f60a2a7f566add766b5f892c6f5}{callback}} (self, ros\+\_\+data)
+\begin{DoxyCompactList}\small\item\em callback to subscribe to camera1 when the state is \mbox{\hyperlink{classstate__machine_1_1_play}{Play}}\+: when the ball is found, a parameter (camera\+\_\+rotate) becomes 1 and the robot starts to rotate the head, otherwise, a parameter becomes 0 and the robot search around for a bit time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1image__feature_a5a1cb2faa11bce8e72056515c3452bbe}\label{classstate__machine_1_1image__feature_a5a1cb2faa11bce8e72056515c3452bbe}} 
+\mbox{\hyperlink{classstate__machine_1_1image__feature_a5a1cb2faa11bce8e72056515c3452bbe}{image\+\_\+pub}}
+\begin{DoxyCompactList}\small\item\em publisher \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classstate__machine_1_1image__feature_a62bc4749ef4e529d537db05de41bc246}\label{classstate__machine_1_1image__feature_a62bc4749ef4e529d537db05de41bc246}} 
+{\bfseries vel\+\_\+pub}
+\item 
+\mbox{\Hypertarget{classstate__machine_1_1image__feature_a5cb84378b3934b77d49a2938e13a6182}\label{classstate__machine_1_1image__feature_a5cb84378b3934b77d49a2938e13a6182}} 
+\mbox{\hyperlink{classstate__machine_1_1image__feature_a5cb84378b3934b77d49a2938e13a6182}{subscriber}}
+\begin{DoxyCompactList}\small\item\em subscriber \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Istance called in play state to track the ball. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstate__machine_1_1image__feature_a719ee46dbe292cfe76d9b20b3d752b9e}\label{classstate__machine_1_1image__feature_a719ee46dbe292cfe76d9b20b3d752b9e}} 
+\index{state\_machine.image\_feature@{state\_machine.image\_feature}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!state\_machine.image\_feature@{state\_machine.image\_feature}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def state\+\_\+machine.\+image\+\_\+feature.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+initialization 
+
+\begin{DoxyVerb}Initialize ros publisher, ros subscriber\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{state__machine_8py}{state\+\_\+machine.\+py}}\end{DoxyCompactItemize}
