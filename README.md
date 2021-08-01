@@ -27,10 +27,6 @@ In order to perform this, Smach library is imported.
 
 In the Normal state, the robot can perform two possible actions (choosen randomly by "user_action" function): can switch in sleep state or can search for the ball, subscribing to the "camera1/image_raw/compressed" topic. Using OpenCV to show the image from the camera, the following window will be opened
 
-![image](window_ball.png)
-
-
-
 
 If the ball is found, then it switches in Play state, otherwise it moves randomly: "move_dog" function is defined to send the goal position to the server of the robot (using "/robot_reaching_goal/goal" topic).
 
@@ -55,8 +51,6 @@ There exists some folders in the package:
 
 World folder: contains the ROS world file, ti create the environment in Gazebo (gridden arena).
 
-![image](URDFRobot_graph.png)
-![image](Dog_robot.png)
 
 
 Urdf folder: cointains the xacro, urdf and gazebo files of the robot, the ball and the human. Here the URDF models are defined.
@@ -66,7 +60,6 @@ Urdf folder: cointains the xacro, urdf and gazebo files of the robot, the ball a
 
 Launch folder: cointains the launch file.
 Scripts folder: cointains the Python files (already discussed in the previous paragraph)
-Config folder: contains the config file for the single motor of the robot (used to rotate the head - yam).
 Action folder: contains the action file (already discussed as well).
 According to the ROS package, the CMakeLists.txt and package.xml are present too.
 
@@ -85,10 +78,3 @@ Then, run the system:
 roslaunch exp_assignment2 gazebo_world.launch
 
 ```
-# System's features
-This system is improving the previous assignment. The environment is simulated with the Gazebo GUI. Moreover, what the robot is doing and what the behavior's state is executing are printed on the Terminal.
-
-# System's limitations and technical improvements
-Sometimes, in Play state, the num of interactions ("count" parameter) finishes before to check the presence of the ball in the arena: this means that the robot cannot perform an entire turn on itself and he cannot see the ball, so enters in the Normal state. Nevertheless, in the normal state, before to move randomly, a checking of the ball presence is done: therefore in case the ball is included, the robot can switch again in Play state.
-
-The view of the dog robot (the xacro file) can be improved, in order to make it look more like a dog.
