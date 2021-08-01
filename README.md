@@ -1,5 +1,5 @@
 # Assignment 2 - Experimental Robotics Laboratory
-#Introduction
+# Introduction
 The ROS package simulates a dog robot which can move freely in an arena (gridden area, 8x8) and can have three different behaviors: sleep, normal and play. A green ball is also implemented that can move randomly in the environment. In sleep state, the robot reaches him home (7,7,0) and wait for a while; In normal state, the robot searches the ball: if he finds the ball then he will start to play, otherwise he will move randomly around the arena; In play state, the robot tracks the ball, when he is close to it, then rotates the head, continuing to track the ball as well. The robot is a wheeled dog robot and the differential drive plugin is used, he has a neck (fixed joint), a head (that can rotate with respect z axis) and a camera on the top; instead the ball is a robot with one link and the planar_move plugin. The nodes are written in Python and the environment used for the simulation is Gazebo. The motions of both robots are implemented with two actionlib client-server, and the visualization of the camera is allowed by OpenCV: CV_bridge library is used to interface ROS and OpenCV by converting ROS images into OpenCV images, and vice-versa.
 
 ## Software achitecture and states diagrams
