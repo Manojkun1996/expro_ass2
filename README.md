@@ -27,7 +27,7 @@ In order to perform this, Smach library is imported.
 
 In the Normal state, the robot can perform two possible actions (choosen randomly by "user_action" function): can switch in sleep state or can search for the ball, subscribing to the "camera1/image_raw/compressed" topic. Using OpenCV to show the image from the camera, the following window will be opened
 
-![image]()
+![image](window_ball.png)
 
 
 
@@ -54,6 +54,9 @@ DetectedBall: Used in Normal state. It is a boolean parameter: switches to 1 whe
 There exists some folders in the package:
 
 World folder: contains the ROS world file, ti create the environment in Gazebo (gridden arena).
+
+![image](URDFRobot_graph.png)
+![image](Dog_robot.png)
 
 
 Urdf folder: cointains the xacro, urdf and gazebo files of the robot, the ball and the human. Here the URDF models are defined.
