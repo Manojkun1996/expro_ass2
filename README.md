@@ -78,3 +78,5 @@ Then, run the system:
 roslaunch exp_assignment2 gazebo_world.launch
 
 ```
+# Author
+Manoj Kunapalli(manoj.bemt.14@gmail.com)
